@@ -45,7 +45,7 @@ class IframeWidget extends StatelessWidget {
         style: extensionContext.styledElement!.style,
         childIsReplaced: true,
         child: Directionality(
-          textDirection: extensionContext.styledElement!.style.direction!,
+          textDirection: TextDirection.ltr,
           child: HtmlElementView(
             viewType: createdViewId,
           ),
